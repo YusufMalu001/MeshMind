@@ -1,0 +1,11 @@
+chromadb>=0.4.24
+sentence-transformers>=2.2.2
+groq>=0.9.0
+streamlit>=1.32.0
+pyyaml>=6.0.1
+python-dotenv>=1.0.1
+tqdm>=4.66.1
+pandas>=2.1.4
+numpy>=1.24.3
+pydantic>=2.5.3
+pip-system-certs; sys_platform == 'win32'
