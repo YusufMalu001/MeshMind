@@ -1,0 +1,997 @@
+[
+  {
+    "conversation_id": "conv_001",
+    "user_id": "user_001",
+    "category": "personal_facts",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "My sister Priya got into IIT Delhi!",
+        "facts_introduced": ["sister is Priya", "Priya got into IIT Delhi"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "I am thinking of getting her a high-end laptop as a congratulatory gift.",
+        "facts_introduced": ["wants to gift sister a laptop"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "Do you have any suggestions on what else makes a good college entry gift besides a laptop?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "Priya starts her classes in August, so I have a bit of time to choose.",
+        "facts_introduced": ["Priya starts classes in August"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "Can you help me write a sweet note to go with my gift for her?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "Thanks! That note is perfect, she will love it.",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "sister is Priya",
+      "Priya got into IIT Delhi",
+      "wants to gift sister a laptop",
+      "Priya starts classes in August"
+    ]
+  },
+  {
+    "conversation_id": "conv_002",
+    "user_id": "user_001",
+    "category": "preferences",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I love South Indian food, especially masala dosa.",
+        "facts_introduced": ["loves South Indian food", "favorite: masala dosa"],
+        "expected_recall_in_turns": [4, 6]
+      },
+      {
+        "turn_id": 2,
+        "user": "Also, I cannot start my day without hot filter coffee.",
+        "facts_introduced": ["needs hot filter coffee in the morning"],
+        "expected_recall_in_turns": [4, 6]
+      },
+      {
+        "turn_id": 3,
+        "user": "I usually make breakfast at home, but today I want to eat out.",
+        "facts_introduced": ["usually cooks breakfast at home"],
+        "expected_recall_in_turns": [4]
+      },
+      {
+        "turn_id": 4,
+        "user": "Can you suggest what I should order from the local cafe this morning?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 5,
+        "user": "I decided to try a new place down the street today.",
+        "facts_introduced": ["trying a new cafe down the street"],
+        "expected_recall_in_turns": [6]
+      },
+      {
+        "turn_id": 6,
+        "user": "I'm looking at their breakfast menu right now, what sounds good given my taste?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [4, 6],
+    "ground_truth_relevant_memories": [
+      "loves South Indian food",
+      "favorite: masala dosa",
+      "needs hot filter coffee in the morning"
+    ]
+  },
+  {
+    "conversation_id": "conv_003",
+    "user_id": "user_001",
+    "category": "events",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I am moving to Seattle next month for my new software engineer job.",
+        "facts_introduced": ["moving to Seattle next month", "starting new software engineer job"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "I'll be working at a tech startup in downtown Seattle.",
+        "facts_introduced": ["working at tech startup in downtown Seattle"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "I need to start packing my bags, what essentials should I prioritize?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "I just signed the lease for a small apartment in Capitol Hill.",
+        "facts_introduced": ["rented apartment in Capitol Hill Seattle"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "How should I design the living room space in my new apartment?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "I'm looking forward to exploring Seattle's coffee culture.",
+        "facts_introduced": ["wants to explore Seattle coffee culture"],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "moving to Seattle next month",
+      "starting new software engineer job",
+      "working at tech startup in downtown Seattle",
+      "rented apartment in Capitol Hill Seattle"
+    ]
+  },
+  {
+    "conversation_id": "conv_004",
+    "user_id": "user_001",
+    "category": "emotional_context",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I'm feeling really anxious about my upcoming move to Seattle and meeting new coworkers.",
+        "facts_introduced": ["anxious about Seattle move", "worried about meeting new coworkers"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "I've always been a bit introverted, which makes making friends difficult for me.",
+        "facts_introduced": ["is introverted", "finds making friends difficult"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "Do you have any tips on how to handle the first day at a new office?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "I did some mindfulness exercises today and it helped calm my nerves a bit.",
+        "facts_introduced": ["practiced mindfulness to calm nerves"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "I'm worried I'll just sit silently in meetings and not speak up.",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "Thanks, your encouragement makes me feel a bit better about this transition.",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "anxious about Seattle move",
+      "worried about meeting new coworkers",
+      "is introverted",
+      "finds making friends difficult"
+    ]
+  },
+  {
+    "conversation_id": "conv_005",
+    "user_id": "user_002",
+    "category": "personal_facts",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I have a three-year-old Golden Retriever named Bruno.",
+        "facts_introduced": ["has Golden Retriever Bruno", "Bruno is 3 years old"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "He is extremely energetic and loves playing fetch in the park.",
+        "facts_introduced": ["Bruno is energetic", "Bruno loves playing fetch"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "He keeps scratching the back door lately, why do you think he does that?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "We are planning to enroll Bruno in an agility training class next week.",
+        "facts_introduced": ["enrolling Bruno in agility training next week"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "What kind of treats should I buy to reward him during his training sessions?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "He did so well today just practicing at home!",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "has Golden Retriever Bruno",
+      "Bruno is 3 years old",
+      "Bruno loves playing fetch",
+      "enrolling Bruno in agility training next week"
+    ]
+  },
+  {
+    "conversation_id": "conv_006",
+    "user_id": "user_002",
+    "category": "preferences",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I love sci-fi movies, and Interstellar is my absolute favorite.",
+        "facts_introduced": ["loves sci-fi movies", "favorite movie: Interstellar"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "I really dislike horror movies, they are too jumpy for me.",
+        "facts_introduced": ["dislikes horror movies"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "What movie should I watch tonight? I want something mind-bending.",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "I also enjoy listening to Hans Zimmer's orchestral soundtracks.",
+        "facts_introduced": ["loves Hans Zimmer soundtracks"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "Do you have suggestions for space-themed musical tracks or albums?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "I'm setting up a home theater system this weekend to enjoy my films.",
+        "facts_introduced": ["setting up home theater system this weekend"],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "loves sci-fi movies",
+      "favorite movie: Interstellar",
+      "dislikes horror movies",
+      "loves Hans Zimmer soundtracks"
+    ]
+  },
+  {
+    "conversation_id": "conv_007",
+    "user_id": "user_002",
+    "category": "events",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I completed a half-marathon in Boston last Sunday!",
+        "facts_introduced": ["ran half-marathon in Boston last Sunday"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "My legs are still incredibly sore from the race.",
+        "facts_introduced": ["legs are sore from marathon"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "What are the best recovery techniques for severe muscle fatigue?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "My finishing time was 1 hour and 55 minutes, which was my personal best.",
+        "facts_introduced": ["marathon time: 1h 55m", "achieved personal best in marathon"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "Can you help me design a light post-race recovery workout plan?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "I am thinking of signing up for another race in Chicago later this year.",
+        "facts_introduced": ["planning Chicago marathon later this year"],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "ran half-marathon in Boston last Sunday",
+      "legs are sore from marathon",
+      "marathon time: 1h 55m",
+      "achieved personal best in marathon"
+    ]
+  },
+  {
+    "conversation_id": "conv_008",
+    "user_id": "user_002",
+    "category": "emotional_context",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I am feeling extremely stressed about my upcoming engineering final exams at university.",
+        "facts_introduced": ["stressed about university final exams", "studies engineering"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "I've been staying up until 3 AM studying and my sleep schedule is completely ruined.",
+        "facts_introduced": ["sleeping late at 3 AM", "ruined sleep schedule due to exams"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "How can I study effectively when I'm feeling so exhausted?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "I failed my practice exam today, which made my anxiety go through the roof.",
+        "facts_introduced": ["failed practice exam", "anxious about failing final exams"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "Can you give me a step-by-step strategy to calm down and study for tomorrow's exam?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "Thanks, I will try to sleep a bit earlier tonight.",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "stressed about university final exams",
+      "studies engineering",
+      "sleeping late at 3 AM",
+      "failed practice exam"
+    ]
+  },
+  {
+    "conversation_id": "conv_009",
+    "user_id": "user_003",
+    "category": "personal_facts",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I speak fluent French and Spanish, in addition to English.",
+        "facts_introduced": ["fluent in French", "fluent in Spanish"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "I am currently trying to learn Mandarin Chinese, but the tones are so hard.",
+        "facts_introduced": ["learning Mandarin Chinese", "struggles with Mandarin tones"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "Do you have any advice on how to master tones in a new language?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "I signed up for a Mandarin conversation partner program online.",
+        "facts_introduced": ["joined Mandarin conversation partner program"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "What topics should I talk about with my language partner to practice my speaking?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "We had our first chat session today and it was fun!",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "fluent in French",
+      "fluent in Spanish",
+      "learning Mandarin Chinese",
+      "joined Mandarin conversation partner program"
+    ]
+  },
+  {
+    "conversation_id": "conv_010",
+    "user_id": "user_003",
+    "category": "preferences",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I prefer working in dark mode on all my coding editors.",
+        "facts_introduced": ["prefers dark mode in editors"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "I also love mechanical keyboards with tactile brown switches.",
+        "facts_introduced": ["loves mechanical keyboards", "prefers tactile brown switches"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "My wrist has been hurting from typing all day, any ideas why?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "I just ordered an ergonomic wrist rest to go with my keyboard setup.",
+        "facts_introduced": ["ordered ergonomic wrist rest"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "How else can I set up my desk workspace to reduce strain?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "I am hoping the wrist rest arrives soon, my hand needs it.",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "prefers dark mode in editors",
+      "loves mechanical keyboards",
+      "prefers tactile brown switches",
+      "ordered ergonomic wrist rest"
+    ]
+  },
+  {
+    "conversation_id": "conv_011",
+    "user_id": "user_003",
+    "category": "events",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I traveled to Kyoto, Japan last autumn and it was magical.",
+        "facts_introduced": ["traveled to Kyoto Japan last autumn"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "My favorite memory was seeing the bright red maple leaves at the temples.",
+        "facts_introduced": ["favorite Kyoto memory: autumn temple leaves"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "I'm putting together a photo album of my trip, what's a good way to organize travel pictures?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "I bought some traditional Japanese matcha tea powder while I was in Kyoto.",
+        "facts_introduced": ["bought traditional Japanese matcha tea in Kyoto"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "How do I prepare matcha at home without traditional bamboo tools?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "I drank some matcha this afternoon, and it tasted exactly like it did in Japan.",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "traveled to Kyoto Japan last autumn",
+      "favorite Kyoto memory: autumn temple leaves",
+      "bought traditional Japanese matcha tea in Kyoto"
+    ]
+  },
+  {
+    "conversation_id": "conv_012",
+    "user_id": "user_003",
+    "category": "emotional_context",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I'm mourning the recent loss of my grandmother, and I've been feeling very lonely.",
+        "facts_introduced": ["mourning recent loss of grandmother", "feeling lonely"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "She raised me, so her passing has left a massive void in my life.",
+        "facts_introduced": ["grandmother raised user"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "I've been finding it hard to get out of bed in the morning lately, how can I cope?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "I started looking through old letters she wrote to me, which brought back sweet memories.",
+        "facts_introduced": ["reading old letters from grandmother"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "I want to do something to honor her memory, do you have any ideas?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "Thank you, writing down her stories seems like a beautiful tribute.",
+        "facts_introduced": ["decided to write grandmother's stories"],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "mourning recent loss of grandmother",
+      "feeling lonely",
+      "grandmother raised user",
+      "reading old letters from grandmother"
+    ]
+  },
+  {
+    "conversation_id": "conv_013",
+    "user_id": "user_004",
+    "category": "personal_facts",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I have been a strict vegetarian for the past 5 years.",
+        "facts_introduced": ["vegetarian for 5 years"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "I stopped eating meat because of environmental concerns.",
+        "facts_introduced": ["vegetarian due to environmental concerns"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "I'm going to a dinner party where the host doesn't know my diet, how should I handle it?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "I offered to bring a home-cooked plant-based side dish to the party.",
+        "facts_introduced": ["bringing plant-based side dish to dinner party"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "Can you recommend a crowd-pleasing vegetarian dish that is easy to transport?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "The dinner party is tonight, I hope they like the dish I made.",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "vegetarian for 5 years",
+      "vegetarian due to environmental concerns",
+      "bringing plant-based side dish to dinner party"
+    ]
+  },
+  {
+    "conversation_id": "conv_014",
+    "user_id": "user_004",
+    "category": "preferences",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I enjoy playing acoustic guitar in my free time.",
+        "facts_introduced": ["plays acoustic guitar"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "I particularly love playing indie folk music, like Gregory Alan Isakov.",
+        "facts_introduced": ["loves indie folk music", "favorite artist: Gregory Alan Isakov"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "My fingers hurt when I play for more than 30 minutes, is that normal?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "I decided to practice a new fingerpicking pattern today.",
+        "facts_introduced": ["practicing fingerpicking pattern"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "Can you suggest some easy acoustic indie folk songs that use fingerpicking?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "I'm practicing the song you suggested, it sounds beautiful.",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "plays acoustic guitar",
+      "loves indie folk music",
+      "favorite artist: Gregory Alan Isakov",
+      "practicing fingerpicking pattern"
+    ]
+  },
+  {
+    "conversation_id": "conv_015",
+    "user_id": "user_004",
+    "category": "events",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I attended the Coldplay concert in Mumbai last weekend!",
+        "facts_introduced": ["attended Coldplay concert in Mumbai last weekend"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "The stadium was packed and the energy was absolutely electric.",
+        "facts_introduced": ["concert stadium was packed", "concert energy was electric"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "My voice is still hoarse from singing along, how do I get it back?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "They played my favorite song, 'Fix You', which was an emotional highlight.",
+        "facts_introduced": ["favorite Coldplay song: Fix You"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "I want to make a playlist of similar emotional rock anthems, what tracks should I add?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "I'm listening to the playlist now, it brings back concert vibes.",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "attended Coldplay concert in Mumbai last weekend",
+      "concert energy was electric",
+      "favorite Coldplay song: Fix You"
+    ]
+  },
+  {
+    "conversation_id": "conv_016",
+    "user_id": "user_004",
+    "category": "emotional_context",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I'm feeling so excited and energized after starting my new outdoor running routine this week.",
+        "facts_introduced": ["excited about outdoor running routine", "started running this week"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "I ran 3 kilometers without stopping today, which felt like a huge milestone.",
+        "facts_introduced": ["ran 3km without stopping"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "I want to maintain this momentum, what is a good running schedule for beginners?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "I bought some proper running shoes today to protect my knees.",
+        "facts_introduced": ["bought new running shoes"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "My shins are hurting a bit after today's run, should I be concerned?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "I will take a rest day tomorrow to let my shins heal.",
+        "facts_introduced": ["taking rest day tomorrow"],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "excited about outdoor running routine",
+      "started running this week",
+      "ran 3km without stopping",
+      "bought new running shoes"
+    ]
+  },
+  {
+    "conversation_id": "conv_017",
+    "user_id": "user_005",
+    "category": "personal_facts",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I am left-handed, which makes finding comfortable scissors a nightmare.",
+        "facts_introduced": ["is left-handed"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "Also, I play competitive tennis at a local club.",
+        "facts_introduced": ["plays competitive tennis at local club"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "My left wrist gets sore after hitting backhands, do you have any tips on technique?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "I am entered into a club tennis tournament scheduled for next month.",
+        "facts_introduced": ["playing club tennis tournament next month"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "How should I prepare mentally for my first competitive match next month?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "I practiced my serves today, and being left-handed gives me a nice slice angle.",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "is left-handed",
+      "plays competitive tennis at local club",
+      "playing club tennis tournament next month"
+    ]
+  },
+  {
+    "conversation_id": "conv_018",
+    "user_id": "user_005",
+    "category": "preferences",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I only drink decaf green tea, as caffeine gives me jitters.",
+        "facts_introduced": ["only drinks decaf green tea", "caffeine gives user jitters"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "I have a massive sweet tooth and love pastries, especially macarons.",
+        "facts_introduced": ["has sweet tooth", "likes pastries", "favorite pastry: macarons"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "I want to try baking at home this weekend, what is a good recipe for someone with my tastes?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "I bought some almond flour and raspberry jam for my baking project.",
+        "facts_introduced": ["bought almond flour and raspberry jam for baking"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "Can you give me step-by-step instructions on how to use these ingredients to bake something delicious?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "The raspberry macarons I made turned out amazing!",
+        "facts_introduced": ["baked raspberry macarons successfully"],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "only drinks decaf green tea",
+      "caffeine gives user jitters",
+      "favorite pastry: macarons",
+      "bought almond flour and raspberry jam for baking"
+    ]
+  },
+  {
+    "conversation_id": "conv_019",
+    "user_id": "user_005",
+    "category": "events",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I bought a new apartment in Chicago and will be moving in this winter.",
+        "facts_introduced": ["bought apartment in Chicago", "moving to Chicago in winter"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "It is located in the Loop, right near Millennium Park.",
+        "facts_introduced": ["Chicago apartment is in the Loop near Millennium Park"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "I am worried about Chicago winters, how should I prepare for the freezing weather?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "I bought a heavy-duty down winter coat and thermal layers yesterday.",
+        "facts_introduced": ["bought heavy-duty down winter coat and thermal layers"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "What else do I need to pack to stay warm in my new apartment during winter?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "I can't wait to see the famous Cloud Gate sculpture covered in snow.",
+        "facts_introduced": ["wants to see Cloud Gate covered in snow"],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "bought apartment in Chicago",
+      "moving to Chicago in winter",
+      "Chicago apartment is in the Loop near Millennium Park",
+      "bought heavy-duty down winter coat and thermal layers"
+    ]
+  },
+  {
+    "conversation_id": "conv_020",
+    "user_id": "user_005",
+    "category": "emotional_context",
+    "turns": [
+      {
+        "turn_id": 1,
+        "user": "I am feeling incredibly overwhelmed by planning our wedding next spring.",
+        "facts_introduced": ["overwhelmed by planning wedding", "wedding is next spring"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 2,
+        "user": "We have 150 guests on the list, and we haven't even finalized the caterer.",
+        "facts_introduced": ["wedding guest count: 150", "wedding caterer not finalized"],
+        "expected_recall_in_turns": [3, 5]
+      },
+      {
+        "turn_id": 3,
+        "user": "Where should I start when I have so many tasks on my wedding checklist?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 4,
+        "user": "We finally booked a local Italian restaurant to cater the wedding today, which is a relief.",
+        "facts_introduced": ["booked local Italian restaurant as wedding caterer"],
+        "expected_recall_in_turns": [5]
+      },
+      {
+        "turn_id": 5,
+        "user": "Now that the catering is done, what next steps should I focus on for our guest list of 150?",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      },
+      {
+        "turn_id": 6,
+        "user": "Thanks, breaking it down into smaller steps really helps my stress levels.",
+        "facts_introduced": [],
+        "expected_recall_in_turns": []
+      }
+    ],
+    "memory_test_turns": [3, 5],
+    "ground_truth_relevant_memories": [
+      "overwhelmed by planning wedding",
+      "wedding is next spring",
+      "wedding guest count: 150",
+      "booked local Italian restaurant as wedding caterer"
+    ]
+  }
+]
