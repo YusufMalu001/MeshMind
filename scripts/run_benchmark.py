@@ -1,4 +1,10 @@
+import os
+import sys
 import logging
+
+# Add parent directory to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from evaluation.benchmark import BenchmarkRunner
 
 # Configure logging

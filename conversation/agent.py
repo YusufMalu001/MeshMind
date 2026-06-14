@@ -108,6 +108,8 @@ class ConversationalAgent:
                 
                 response_text = response.choices[0].message.content or ""
                 success = True
+                # Pacing sleep to respect rate limits
+                time.sleep(1.0)
                 break
             except Exception as e:
                 if i < len(retries):

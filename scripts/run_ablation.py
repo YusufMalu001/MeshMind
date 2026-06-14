@@ -1,4 +1,10 @@
+import os
+import sys
 import argparse
+
+# Add parent directory to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from experiments.ablation import run_ablation_study
 
 

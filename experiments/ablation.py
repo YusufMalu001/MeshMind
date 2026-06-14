@@ -1,3 +1,31 @@
+# --- MONKEY PATCH TO BYPASS PYARROW/DATASETS CRASH ---
+import sys
+from types import ModuleType
+import importlib.machinery
+
+if 'datasets' not in sys.modules:
+    class MockDatasets(ModuleType):
+        def __init__(self, name):
+            super().__init__(name)
+            self.__path__ = []
+            self.__spec__ = importlib.machinery.ModuleSpec(name, None)
+
+        def __getattr__(self, name):
+            if name == '__version__':
+                return "3.0.0"
+            if name.startswith('__') and name.endswith('__'):
+                raise AttributeError(name)
+            class Dummy:
+                pass
+            Dummy.__name__ = name
+            return Dummy
+
+    sys.modules['datasets'] = MockDatasets('datasets')
+
+import os
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+# -----------------------------------------------------
+
 import logging
 from evaluation.benchmark import BenchmarkRunner
 

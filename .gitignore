@@ -1,0 +1,20 @@
+.chroma/
+__pycache__/
+*.pyc
+.env
+
+# Benchmark and temporary logs
+*_out.txt
+output.txt
+*.parquet
+*.webp
+test_out_ps_u.txt
+test_out_v.txt
+trans_v.txt
+
+# Scratch scripts
+test_import_local.py
+
+# Local database directories
+results/chroma_db/
+results/entity_embeddings.npy

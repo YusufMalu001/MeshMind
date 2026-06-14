@@ -107,6 +107,8 @@ def evaluate_hallucination(
             )
             content = res.choices[0].message.content or ""
             parsed = json.loads(content)
+            # Pacing sleep to respect rate limits
+            time.sleep(1.0)
             return bool(parsed.get("hallucinated", False))
         except Exception as e:
             if i < len(retries):
@@ -163,6 +165,8 @@ def evaluate_personalization(
             content = res.choices[0].message.content or ""
             parsed = json.loads(content)
             score = int(parsed.get("score", 1))
+            # Pacing sleep to respect rate limits
+            time.sleep(1.0)
             return max(1, min(5, score))
         except Exception as e:
             if i < len(retries):
@@ -217,6 +221,8 @@ def evaluate_coherence(
             content = res.choices[0].message.content or ""
             parsed = json.loads(content)
             score = int(parsed.get("score", 5))
+            # Pacing sleep to respect rate limits
+            time.sleep(1.0)
             return max(1, min(5, score))
         except Exception as e:
             if i < len(retries):

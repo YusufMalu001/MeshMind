@@ -1,0 +1,34 @@
+{
+  "no_memory": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "hallucination_rate": 0.8333333333333334,
+    "personalization_score": 3.583333333333333,
+    "coherence_score": 5.0,
+    "avg_latency_ms": 11981.629729270935
+  },
+  "no_forgetting": {
+    "precision": 0.8734335839598997,
+    "recall": 1.0,
+    "hallucination_rate": 0.5,
+    "personalization_score": 4.583333333333333,
+    "coherence_score": 4.916666666666666,
+    "avg_latency_ms": 11731.585999329885
+  },
+  "recency_decay": {
+    "precision": 0.8818181818181818,
+    "recall": 1.0,
+    "hallucination_rate": 0.41666666666666663,
+    "personalization_score": 4.5,
+    "coherence_score": 5.0,
+    "avg_latency_ms": 12862.505356470745
+  },
+  "hybrid": {
+    "precision": 0.7731829573934836,
+    "recall": 1.0,
+    "hallucination_rate": 0.41666666666666663,
+    "personalization_score": 4.666666666666666,
+    "coherence_score": 4.916666666666666,
+    "avg_latency_ms": 10866.00649356842
+  }
+}

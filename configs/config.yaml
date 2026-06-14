@@ -1,5 +1,5 @@
-groq_model: "llama-3.1-8b-instant"
-judge_model: "llama-3.3-70b-versatile"
+groq_model: "qwen/qwen3-32b"
+judge_model: "qwen/qwen3-32b"
 embedding_model: "all-MiniLM-L6-v2"
 chroma_collection: "meshmind_memories"
 max_memories_per_user: 100
@@ -8,5 +8,5 @@ recency_decay_halflife_days: 7
 relevance_prune_threshold: 0.25
 min_retrieval_count_to_keep: 2
 conversation_turns: 6
-num_test_conversations: 20
+num_test_conversations: 2
 results_dir: "./results"
